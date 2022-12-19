@@ -1,0 +1,64 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <!-- START: Google Font -->
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap'
+      rel='stylesheet'
+    />
+    <!-- END: Google Font -->
+    <style>
+      * { padding: 0; margin: 0; box-sizing: border-box; } body { font-family:
+      'Righteous', cursive; margin: 0; padding: 0; flex-direction: column; }
+      footer { color: #ffffff; border-radius: 0px 0px 20px 20px; width: 500px;
+      height: fit-content; background-color: #161b22; } h1 { padding: 20px 20px 0px 20px;
+      color: #ffd400; } .container { margin-left: 30%; border-radius: 20px; margin-top: 20px; }
+      main { height: fit-content; } .header-container { border-radius: 20px 20px
+      0px 0px; width: 500px; height: fit-content; background-color: #161b22; }
+      .message-content { width: 500px; border: 1px solid #161b22; }
+      .message-header { margin-left: 33%; margin-top: 10px; } .message-content p
+      { padding: 10px 20px 10px 20px; text-align: justify; } .verify-button {
+      text-decoration: none; cursor: pointer; padding: 10px; font-family:
+      'Righteous', cursive; background-color: white; border: 5px solid #ffd400;
+      border-radius: 10px; transition: 0.2s; } .action-button-container {
+      margin-left: 42%; margin-top: 15px; margin-bottom: 25px; }
+      .verify-button:hover { border: 5px solid #f58216; background-color:
+      #f58216; border-color: #f58216; } footer p { margin-left: 42%; padding:
+      10px; } .header-container p {
+        padding: 10px 0px 10px 20px;
+        color: #ffffff;
+      }
+    </style>
+    <title>Email Verification</title>
+  </head>
+
+  <body>
+    <div class='container'>
+      <main>
+        <div class='header-container'><h1>Pokécard</h1><p>For  {{trainer_name}}</p></div>
+        <div class='message-content'>
+          <h3 class='message-header'>Welcome to Pokécard</h3>
+          <p>
+            You need to verify your email by clicking the link or the button
+            bellow.
+          </p>
+          <p>
+            This is so that you have been verified as the owner of the account
+            and so that you have access to several things you might need, such
+            as 'Forgot password?'
+          </p>
+          <div class='action-button-container'>
+            <a href=`{{link}}` class='verify-button'>Verify</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>By Ray</p>
+      </footer>
+    </div>
+  </body>
+</html>

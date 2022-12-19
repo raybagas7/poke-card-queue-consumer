@@ -13,6 +13,7 @@
     "amqplib": "^0.10.3",
     "dotenv": "^16.0.3",
     "nodemailer": "^6.8.0",
+    "nodemailer-express-handlebars": "^6.0.0",
     "pg": "^8.8.0"
   }
 }
