@@ -38,6 +38,21 @@ class MailSender {
 
     return this._transporter.sendMail(message);
   }
+
+  sendNewPassword(targetEmail, newPassword) {
+    const message = {
+      from: 'Pokecard',
+      to: targetEmail,
+      subject: 'Forgot Password',
+      text: `${newPassword}`,
+      template: 'main',
+      context: {
+        newPassword,
+      },
+    };
+
+    return this._transporter.sendMail(message);
+  }
 }
 
 module.exports = MailSender;
