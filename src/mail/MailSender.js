@@ -22,7 +22,7 @@ class MailSender {
 
   sendEmail(targetEmail, trainer_name, content) {
     const { owner, token } = JSON.parse(content);
-    const link = `http://localhost:5000/verify/email/${owner}/${token}`;
+    const link = `http://18.138.255.1:5000/verify/email/${owner}/${token}`;
 
     const message = {
       from: 'Pokecard',
